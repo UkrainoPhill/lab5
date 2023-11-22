@@ -9,12 +9,12 @@ class Type(Enum):
 
 
 class Candy:
-    def __init__(self, name, mass, amount, price, tp):
+    def __init__(self, name, mass, amount, price, type_):
         self.name = name
         self.mass = mass
         self.amount = amount
         self.price = price
-        self.type = tp
+        self.type = type_
 
     def ate(self):
         if self.mass * self.amount > 2000:
